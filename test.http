@@ -1,0 +1,6 @@
+### show all users 
+
+GET http://localhost:3022
+content-type: application/json; 
+
+
