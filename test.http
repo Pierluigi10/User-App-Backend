@@ -1,11 +1,14 @@
-### show all users 
 
-GET http://localhost:3022
+@url= http://localhost:3022
+
+
+### show all users 
+GET {{url}}
 content-type: application/json; 
 
 
 ### Delete users (TEST)
-DELETE http://localhost:3022/deleteuser/user123
+DELETE {{url}}/deleteuser/user123
 content-type: application/json; 
 
 
