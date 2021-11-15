@@ -16,3 +16,14 @@ DELETE {{url}}/deleteuser/6192322df2e62e6943e2747f
 content-type: application/json; 
 
 
+### Add a user TEST
+POST {{url}}/adduser
+content-type: application/json
+
+{
+    "user": {
+        "name": "Angie Additive",
+        "username": "angie_additive",
+        "email": "angie@hotmail.com"
+    }
+}

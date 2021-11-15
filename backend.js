@@ -6,6 +6,8 @@ const port = 3022;
 
 const mongoConnectionsString = "mongodb://localhost:27017";
 const client = new MongoClient(mongoConnectionsString);
+app.use(express.json());
+
 
 const getDatabase = async (done) => {
   await client.connect();
@@ -47,6 +49,11 @@ app.delete("/deleteuser/:id", (req, res) => {
       result: deleteResult,
     });
   });
+});
+
+app.post("/adduser/", (req, res) => {
+  const user = req.body.user;
+  res.json(user)
 });
 
 app.listen(port, () => {
