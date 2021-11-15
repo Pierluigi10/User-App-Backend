@@ -19,14 +19,22 @@ const getData = async (done) => {
 
 app.get("/", (req, res) => {
   getData(async (db) => {
-    const users = await db.collection("users100").find()
-    .project({
-      name: 1,
-      username: 1,
-      email: 1
-    }).toArray();
+    const users = await db
+      .collection("users100")
+      .find()
+      .project({
+        name: 1,
+        username: 1,
+        email: 1,
+      })
+      .toArray();
     res.json(users);
   });
+});
+
+app.delete("/deleteuser/:id", (req, res) => {
+  const id = req.params.id;
+  res.send(id);
 });
 
 app.listen(port, () => {

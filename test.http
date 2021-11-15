@@ -4,3 +4,8 @@ GET http://localhost:3022
 content-type: application/json; 
 
 
+### Delete users (TEST)
+DELETE http://localhost:3022/deleteuser/user123
+content-type: application/json; 
+
+
