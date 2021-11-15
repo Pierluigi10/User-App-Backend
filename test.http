@@ -27,3 +27,11 @@ content-type: application/json
         "email": "angie@hotmail.com"
     }
 }
+
+### Update a useer
+PATCH {{url}}/edituser/61926845cf0afe5ce93eefbb
+content-type: application/json
+
+{
+    "email": "angie@yahoo.com"
+}
