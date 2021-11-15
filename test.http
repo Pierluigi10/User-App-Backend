@@ -11,4 +11,8 @@ content-type: application/json;
 DELETE {{url}}/deleteuser/user123
 content-type: application/json; 
 
+### Delete users by ID
+DELETE {{url}}/deleteuser/6192322df2e62e6943e2747f
+content-type: application/json; 
+
 
