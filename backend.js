@@ -10,7 +10,7 @@ const port = process.env.PORT || 3022;
 app.use(cors());
 
 // const mongoConnectionsString = "mongodb://localhost:27017";
-const mongoConnectString = process.env.MONGODB_URI;
+const mongoConnectionsString = process.env.MONGODB_URI;
 const client = new MongoClient(mongoConnectionsString);
 app.use(express.json());
 
