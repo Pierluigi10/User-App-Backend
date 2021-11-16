@@ -1,6 +1,3 @@
-# liveUserAppBackend
-
-
 
 #  manageUserAppBackend
 
@@ -21,7 +18,7 @@ See also the [frontend](https://github.com/Pierluigi10/user-app-frontend).
 - click on e.g. "Send Request" under "### show all users"
 
 
-### Source:  [onespace](https://onespace.netlify.app/)
+## Source:  [onespace](https://onespace.netlify.app/)
 
 - [Create the backend API of a two-part user-management project](https://onespace.netlify.app/howtos?id=431)
 
