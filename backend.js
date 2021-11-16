@@ -1,12 +1,16 @@
 import express from "express";
 import mongodb, { MongoClient } from "mongodb";
 import cors from "cors";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
-const port = 3022;
-app.use(cors())
+const port = process.env.PORT || 3022;
+app.use(cors());
 
-const mongoConnectionsString = "mongodb://localhost:27017";
+// const mongoConnectionsString = "mongodb://localhost:27017";
+const mongoConnectString = process.env.MONGODB_URI;
 const client = new MongoClient(mongoConnectionsString);
 app.use(express.json());
 
@@ -66,10 +70,7 @@ app.patch("/edituser/:id", (req, res) => {
   getDatabase(async (db) => {
     const updateResult = await db
       .collection("users100")
-      .updateOne(
-        { _id: new mongodb.ObjectId(id) },
-        { $set: { email} }
-      );
+      .updateOne({ _id: new mongodb.ObjectId(id) }, { $set: { email } });
     res.json({
       result: updateResult,
     });
