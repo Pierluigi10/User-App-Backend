@@ -39,6 +39,13 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/allinfo", (req, res) => {
+  getDatabase(async (db) => {
+    const users = await db.collection("users100").find().toArray();
+    res.json(users);
+  });
+});
+
 // app.delete("/deleteuser/:id", (req, res) => {
 //   const id = req.params.id;
 //   res.send(id);

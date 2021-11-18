@@ -6,6 +6,10 @@
 GET {{url}}
 content-type: application/json; 
 
+### show all users infos
+GET {{url}}/allinfo
+content-type: application/json; 
+
 
 ### Delete users (TEST)
 DELETE {{url}}/deleteuser/user123
