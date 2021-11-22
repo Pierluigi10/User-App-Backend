@@ -1,5 +1,5 @@
 
-#  manageUserAppBackend
+#  Manage User App Backend
 
 This is the backend for a user-management app that has a create-react-app frontend and Node/Express API backend that carries out CRUD operations.
 
@@ -16,6 +16,15 @@ See also the [frontend](https://github.com/Pierluigi10/user-app-frontend).
 - in VSCode, install the Rest Client extension
 - open `test.http`
 - click on e.g. "Send Request" under "### show all users"
+
+
+
+## Deployed to Heroku
+- [backend](https://manage-user-app-backend.herokuapp.com/)
+- [frontend](https://manage-user-app-frontend.herokuapp.com/) 
+
+
+
 
 
 ## Source:  [onespace](https://onespace.netlify.app/)
